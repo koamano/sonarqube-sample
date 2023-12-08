@@ -5,6 +5,7 @@ sonarqube:
   #   enabled: true
   ingress:
     enabled: true
+    ingressClassName: nginx
     # Used to create an Ingress record.
     hosts:
       - name: sonarqube.kosukeamano.com   
