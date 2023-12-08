@@ -8,7 +8,7 @@ sonarqube:
     ingressClassName: nginx
     # Used to create an Ingress record.
     hosts:
-      - name: sonarqube.kosukeamano.com   
+      - name: sonarqube-dev.kosukeamano.com   
         # Different clouds or configurations might need /* as the default path
         path: /
         # For additional control over serviceName and servicePort
