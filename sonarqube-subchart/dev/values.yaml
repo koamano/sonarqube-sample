@@ -1,16 +1,10 @@
 sonarqube:
   service:
     type: LoadBalancer
-  # nginx:
-  #   enabled: true
   ingress:
     enabled: true
     ingressClassName: nginx
-    # Used to create an Ingress record.
     hosts:
       - name: sonarqube-dev.kosukeamano.com   
-        # Different clouds or configurations might need /* as the default path
         path: /
-        # For additional control over serviceName and servicePort
-        # serviceName: someService
-        # servicePort: somePort
+
